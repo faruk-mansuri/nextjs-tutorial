@@ -13,7 +13,7 @@ const SubmitBtn = () => {
 const DeleteForm = ({ id }) => {
   return (
     <form action={deleteTask}>
-      <input type='text' hidden name='id' value={id} />
+      <input type='text' hidden name='id' defaultChecked={id} />
       <SubmitBtn />
     </form>
   );
